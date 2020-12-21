@@ -38,8 +38,8 @@ export default {
       return response.json()
     })
     .then((jsonData) => {
-      this.loading = false;
       this.friends = jsonData
+      this.loading = false;
     })
   }
 };
