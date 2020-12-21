@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <div class="hero-container">
@@ -25,7 +24,6 @@
 <script>
 
   export default {
-
     name: 'FriendList',
     props: {
       friends: Array
@@ -127,7 +125,7 @@
   }
 
   #cta{
-      width:100%; cursor: pointer; position: absolute;
+    width:100%; cursor: pointer; position: absolute;
   }
 
   #cta .arrow{ 
@@ -139,7 +137,6 @@
   .next {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iNzUiIHZpZXdCb3g9IjAgMCA0NSA3NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQyLjYxMjggMzIuMDU4NkM0NS42OTAyIDM1LjEzNTkgNDUuNjQ0NSA0MC4xNjMzIDQyLjUyMTQgNDMuMjg2M0MzOS4zOTg0IDQ2LjQwOTQgMzQuMzcxIDQ2LjQ1NTEgMzEuMjkzNyA0My4zNzc3TDIuMzQ4MzcgMTQuNDMyNEMtMC43MTM3MzUgMTEuMzU1MSAtMC42NjgwMzIgNi4zMjc3MiAyLjQ1NTAxIDMuMjA0NjhDNS41NzgwNiAwLjA4MTYyODkgMTAuNjA1NCAwLjAzNTkyNTYgMTMuNjY3NSAzLjExMzI3TDQyLjYxMjggMzIuMDU4NloiIGZpbGw9IiMwMEJDRDQiLz4KPHBhdGggZD0iTTQyLjYxMjkgNDMuMjU1OUM0NS42OTAzIDQwLjE3ODUgNDUuNjQ0NSAzNS4xNTEyIDQyLjUyMTUgMzIuMDI4MUMzOS4zOTg1IDI4LjkwNTEgMzQuMzcxMSAyOC44NTk0IDMxLjI5MzggMzEuOTM2N0wyLjM0ODQ1IDYwLjg4MkMtMC43Mjg4OTEgNjMuOTU5NCAtMC42ODMxODcgNjguOTg2NyAyLjQzOTg2IDcyLjEwOThDNS41NjI5MSA3NS4yMzI4IDEwLjU5MDMgNzUuMjc4NSAxMy42Njc2IDcyLjIwMTJMNDIuNjEyOSA0My4yNTU5WiIgZmlsbD0iIzAwQkNENCIvPgo8L3N2Zz4K);
   }
-
 
   .bounceAlpha {
     animation-name: bounceAlpha;

@@ -38,6 +38,7 @@
 </template>
 
 <script>
+
   export default {
     data: () => ({
       name: 'Footer',
@@ -45,9 +46,11 @@
       variant: 'default'
     }),
   }
+
 </script>
 
 <style scoped lang="scss">
+
   .footer-wrapper{
     @media screen and (max-width: 320px) {
       max-width: 320px;
