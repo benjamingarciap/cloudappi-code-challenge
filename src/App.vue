@@ -40,7 +40,6 @@ export default {
     .then((jsonData) => {
       this.loading = false;
       this.friends = jsonData
-      console.log(this.friends)
     })
   }
 };
