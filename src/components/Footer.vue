@@ -16,7 +16,7 @@
               open-delay="200"
             >
             <a 
-              href="https://github.com/benjamingarciap" 
+              href="https://github.com/benjamingarciap/cloudappi-code-challenge" 
               target="blank" 
               class="text-decoration-none "
               
