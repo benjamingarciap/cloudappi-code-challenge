@@ -1,28 +1,51 @@
 <template>
-  <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  </div>
+  <v-app>
+    <AppBar/>
+    <v-main>
+      <Hero :friends="friends" id="element"/>
+      <UserList :friends="friends" :loading="loading" id="friend-list"/>
+    </v-main>
+    <Footer/>
+  </v-app>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
+import AppBar from './components/AppBar';
+import Hero from './components/Hero';
+import UserList from './components/UserList';
+import Footer from './components/Footer';
 
 export default {
   name: 'App',
+
   components: {
-   // HelloWorld
+    UserList,
+    Hero, 
+    AppBar,
+    Footer
+  },
+
+  data: () => ({
+    friends: null, 
+    loading: true
+  }),
+  
+  mounted: function() {
+    fetch('https://my-user-manager.herokuapp.com/users', {
+      method: 'get'
+    })
+    .then((response) => {
+      return response.json()
+    })
+    .then((jsonData) => {
+      this.loading = false;
+      this.friends = jsonData
+      console.log(this.friends)
+    })
   }
-}
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 </style>
